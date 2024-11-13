@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Product</title>
+    <title>Products</title>
 </head>
 <body>
 
@@ -12,55 +12,124 @@
     <nav>
         <ul>
             <li><a href="index.html">home</a></li>
-            <li><a href="#products">products</a></li>
+            <li><a href="#popular-products">products</a></li>
             <li><a href="index.html"> Logo </a></li>
-            <li><a href="#categories">categories</a></li>
-            <li><a href="contact.html">contact us</a></li>
+            <li><a href="#popular-categories">categories</a></li>
+            <li><a href="checkout.html">cart</a></li>
+            <li><a href="#contact-info">contact us</a></li>
         </ul>
         <form>
             <label for="search">search</label>
-            <input type="search" placeholder="search products..">
+            <input type="text" id="search" placeholder="search products..">
             <input type="submit" value="search">
         </form>
     </nav>
 </header>
     
+<nav>
+    <ol>
+        <a href="index.html">Home</a>  
+        <a href="category.html">category</a>
+        <li>Productname</li>
+    </ol>
+</nav>
+
 <main>
-        
+    <section>
+        <h2>product images</h2>
+
+        <figure>
+            <img src="#" alt="Main image of the product">
+            <figcaption>product name</figcaption>
+        </figure>
+
+        <aside>
+            <img src="#" alt="mini picture 1">
+            <img src="#" alt="mini picture 2">
+            <img src="#" alt="mini picture 3">
+        </aside>
+    </section>
+
+    <section>
+        <h2>product info</h2>
+
+        <h1>product name</h1>
+        <p>brand name</p>
+        <p>kr 1900</p>
+        <p>Color: White</p>
+
+        <form action="checkout.html" method="post">
+            <label for="Size">choose size</label>
+        <select name="size" id="size">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+        </select>
+        <button type="button">Add to cart</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Relevant products</h2>
+
+        <article>
+            <img src="#" alt="Relevant product 1">
+           <h3>product name 1</h3>
+            <p>Price: kr 999</p>
+        </article>
+
+        <article>
+            <img src="#" alt="Relevant product 2">
+            <h3>product name 2</h3>
+            <p>Price: kr 999</p>
+        </article>
+
+        <article>
+            <img src="#" alt="Relevant product 3">
+            <h3>product name 3</h3>
+            <p>Price: kr 999</p>
+        </article>
+
+        <article>
+            <img src="#" alt="Relevant product 4">
+            <h3>product name 4</h3>
+            <p>Price: kr 999</p>
+        </article>
+    </section>
 </main>
 
-<footer>
-<section>
-    <h3>Logo</h3>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-</section>
-
-<section>
-<h4>KONTACT</h4>
-<p>Adresse:B R A Veien 4, 1757 Halden</p>
-<p>Phone:69 60 80 00</p>
-<p>Mail:postmottak@hiof.no</p>
-<p>opening hours:Closing 16.00</p>
-</section>
-
-<section>
-    <h4>SHORTCUTS</h4>
-    <ul>
-        <li><a href="#products">products</a></li>
-        <li><a href="#categories">categories</a></li>
-        <li><a href="contact.html">contacts us</a></li>
-    </ul>
-</section>
-
-<section>
-    <h4>SOSIAL MEDIA</h4>
-    <ul>
-        <li><a href="https://instagram.com">instagram</a></li>
-        <li><a href="https://facebook.com">facebook</a></li>
-        <li><a href="https://linkedin.com">linkedin</a></li>
-        <li><a href="https://pinterest.com">pinterest</a></li>
-    </ul>
-</section>
-</footer>    
-</body>
-</html>
+<footer id="footer">
+    <section>
+        <h3>Logo</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    </section>
+    
+    <section id="contact-info">
+    <h4>Kontact Info</h4>
+    <p>Adress:B R A Veien 4, 1757 Halden</p>
+    <p>Phone:69 60 80 00</p>
+    <p>Mail:postmottak@nettbutikk.no</p>
+    <p>opening hours:Closing 16.00</p>
+    </section>
+    
+    <section>
+        <h4>SHORTCUTS</h4>
+        <ul>
+            <li><a href="#popular-products">products</a></li>
+            <li><a href="#popular-categories">categories</a></li>
+            <li><a href="#contact-info">contacts us</a></li>
+        </ul>
+    </section>
+    
+    <section>
+        <h4>SOSIAL MEDIA</h4>
+        <ul>
+            <li><a href="https://instagram.com">Instagram</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://linkedin.com">Linkedin</a></li>
+            <li><a href="https://pinterest.com">Pinterest</a></li>
+        </ul>
+    </section>
+    </footer>    
+    </body>
+    </html>
