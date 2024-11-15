@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="styles.css">
     <title>Front-Page</title>
 </head>
-<body>
 
+<body>
+<div class="grid-container">
 <header>
-    <nav>
+    <nav class="main-nav" aria-label="Main Navigation">
         <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="#popular-products">products</a></li>
@@ -18,7 +19,7 @@
             <li><a href="checkout.html">cart</a></li>
             <li><a href="#contact-info">contact us</a></li>
         </ul>
-        <form>
+        <form class="search-form" id="search-form">
             <label for="search">search</label>
             <input type="text" id="search" placeholder="search products..">
             <input type="submit" value="search">
@@ -27,108 +28,124 @@
 </header>
     
 <main>
-    <section id="banner">
+    <section id="banner" class="hero-banner">
         <h2>Sed ut perspiciatis unde omnis iste natus error sit</h2>
         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui</p>
         <a href="#popular-products">explore now!</a>
     </section>
 
-    <section id="popular-products">
+    <section id="popular-products" class="product-list">
         <h3>our most popular products</h3>
         <p>our best-selling products</p>
     </section>
     <section>
-        <button>New Product</button>
-        <button>Special Price</button>
-        <button>Best sellers</button>
+        <ul class="filter-buttons" aria-label="Product Filters">
+            <li><a href="#">New products</a></li>
+            <li><a href="#">Special price</a></li>
+            <li><a href="#">Best sellers</a></li>
+        </ul>
     </section>
 
     <section>
-        <article>
-            <img src="#" alt="product 1">
+        <article class="product-card">
+            <img src="image/boutique-4342604_1280.jpg" alt="product 1" class="product-image">
+            <h4 class="product-name">product-name</h4>
+            <p class="product-price">Price</p>
+        </article>
+        <article class="product-card">
+            <img src="image/boutique-4342604_1280.jpg" alt="product 2">
             <h4>product-name</h4>
             <p>Price</p>
         </article>
-        <article>
-            <img src="#" alt="product 2">
+        <article class="product-card">
+            <img src="image/boutique-4342604_1280.jpg" alt="product 3">
             <h4>product-name</h4>
             <p>Price</p>
         </article>
-        <article>
-            <img src="#" alt="product 3">
+        <article class="product-card">
+            <img src="image/boutique-4342604_1280.jpg" alt="product 4">
             <h4>product-name</h4>
             <p>Price</p>
         </article>
-        <article>
-            <img src="#" alt="product 4">
+        <article class="product-card">
+            <img src="image/boutique-4342604_1280.jpg" alt="product 5">
             <h4>product-name</h4>
             <p>Price</p>
         </article>
-        <article>
-            <img src="#" alt="product 5">
-            <h4>product-name</h4>
-            <p>Price</p>
-        </article>
-        <article>
-            <img src="#" alt="product 6">
+        <article class="product-card">
+            <img src="image/boutique-4342604_1280.jpg" alt="product 6">
             <h4>product-name</h4>
             <p>Price</p>
         </article>
     </section>
 
-    <section id="popular-categories">
+    <section id="popular-categories" class="category-list">
         <h3>our most popular categories</h3>
         <p>discover best of the best! in our top categories</p>
 
-        <article>
+        <article class="category-card">
             <h3>category 1</h3>
         </article>
 
-        <article>
+        <article class="category-card">
             <h3>category 2</h3>
         </article>
 
-        <article>
+        <article class="category-card">
             <h3>category 3</h3>
         </article>
 
-        <article>
+        <article class="category-card">
             <h3>category 4</h3>
         </article>
 
-        <article>
+        <article class="category-card">
             <h3>category 5</h3>
         </article>
     </section>
 
-    <section>
+    <section id="reviews" class="reviews-section">
         <h3>Reviews</h3>
 
-        <article>
+        <article class="review-card">
+            <figure>
             <img src="#" alt="Reviews 1">
+            <figcaption>
             <h4>Reviews 1</h4>
             <p>xxx</p>
+        </figcaption>
+        </figure>
         </article>
 
-        <article>
-            <img src="#" alt="Reviews 1">
+        <article class="review-card">
+            <figure>
+            <img src="#" alt="Reviews 2">
+            <figcaption>
             <h4>Reviews 2</h4>
             <p>xxx</p>
+        </figcaption>
+        </figure>
         </article>
 
-        <article>
-            <img src="#" alt="Reviews 1">
+        <article class="review-card">
+            <figure>
+            <img src="#" alt="Reviews 3">
+            <figcaption>
             <h4>Reviews 3</h4>
             <p>xxx</p>
+        </figcaption>
+        </figure>
         </article>
 
-        <article>
-            <img src="#" alt="Reviews 1">
+        <article class="review-card">
+            <figure>
+            <img src="#" alt="Reviews 4">
+            <figcaption>
             <h4>Reviews 4</h4>
             <p>xxx</p>
+        </figcaption>
+        </figure>
         </article>
-    </section>
-
 </main>
 
 <footer id="footer">
@@ -164,5 +181,6 @@
     </ul>
 </section>
 </footer>    
+</div>
 </body>
 </html>
