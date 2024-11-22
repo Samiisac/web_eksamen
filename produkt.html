@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Products</title>
+    <link rel="stylesheet" href="icon/css/all.css">
+    <link rel="stylesheet" href="icon/css/brands.css">
+    <link rel="stylesheet" href="icon/css/solid.css">
+    <title>Front-Page</title>
 </head>
 
 <body>
 <div class="grid-container">
-    <header>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="#popular-products">products</a></li>
-                <li><a href="index.html"> Logo </a></li>
-                <li><a href="#popular-categories">categories</a></li>
-                <li><a href="checkout.html">cart</a></li>
-                <li><a href="#contact-info">contact us</a></li>
-            </ul>
-            <form class="search-form">
-                <label for="search">search</label>
-                <input type="text" id="search" placeholder="search products..">
-                <input type="submit" value="search">
-            </form>
-        </nav>
-    </header>
+<header>
+    <form class="search-form" id="search-form">
+        <input type="text" placeholder="search her..">
+        <input type="submit" value="search">
+    </form>
+    <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#popular-products">products</a></li>
+            <li><a href="index.html"> Logo </a></li>
+            <li><a href="#popular-categories">categories</a></li>
+            <li><a href="#contact-info">contact us</a></li>
+            <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#"> <i class="fa-regular fa-user"></i></a></li>
+            <li><a href="#"> <i class="fa-regular fa-heart"></i></a></li>
+        </ul>
+    </nav>
+</header>
         
     
 <nav class="breadcrumb-nav">
@@ -41,24 +45,21 @@
         <h2>product images</h2>
 
         <figure>
-            <img src="#" alt="Main image of the product">
-            <figcaption>product name</figcaption>
+            <img src="image/boutique-4342604_1280.jpg" alt="Main image of the product">
         </figure>
 
-        <aside>
-            <img src="#" alt="mini picture 1">
-            <img src="#" alt="mini picture 2">
-            <img src="#" alt="mini picture 3">
+        <aside class="minipic">
+            <img src="image/boutique-4342604_1280.jpg" alt="mini picture 1">
+            <img src="image/boutique-4342604_1280.jpg" alt="mini picture 2">
+            <img src="image/boutique-4342604_1280.jpg" alt="mini picture 3">
         </aside>
     </section>
 
     <section class="product-info">
-        <h2>product info</h2>
-
-        <h1>product name</h1>
-        <p>brand name</p>
+       
+        <h2>product name</h2>
         <p>kr 1900</p>
-        <p>Color: White</p>
+        <p>Color: orange</p>
 
         <form action="checkout.html" method="post">
             <label for="size">Choose size</label>
@@ -77,9 +78,9 @@
 
         <article class="related-product-card">
         <figure>
-            <img src="#" alt="Related product 1">
+            <img src="image/1.jpg" alt="Related product 1">
         <figcaption>
-            <h3>product name 1</h3>
+            <h3>product name</h3>
             <p>Price: kr 999</p>
         </figcaption>
         </figure>
@@ -87,9 +88,9 @@
 
         <article class="related-product-card">
             <figure>
-                <img src="#" alt="Related product 2">
+                <img src="image/2.jpg" alt="Related product 2">
             <figcaption>
-                <h3>product name 1</h3>
+                <h3>product name</h3>
                 <p>Price: kr 999</p>
             </figcaption>
             </figure>
@@ -97,9 +98,9 @@
 
             <article class="related-product-card">
                 <figure>
-                    <img src="#" alt="Related product 3">
+                    <img src="image/3.jpg" alt="Related product 3">
                 <figcaption>
-                    <h3>product name 1</h3>
+                    <h3>product name</h3>
                     <p>Price: kr 999</p>
                 </figcaption>
                 </figure>
@@ -107,9 +108,9 @@
 
                 <article class="related-product-card">
                     <figure>
-                        <img src="#" alt="Related product 4">
+                        <img src="image/4.jpg" alt="Related product 4">
                     <figcaption>
-                        <h3>product name 1</h3>
+                        <h3>product name</h3>
                         <p>Price: kr 999</p>
                     </figcaption>
                     </figure>
@@ -144,12 +145,19 @@
         <h4>SOSIAL MEDIA</h4>
         <ul>
             <li><a href="https://instagram.com">Instagram</a></li>
+            <i class="fa-brands fa-instagram"></i>
+    
             <li><a href="https://facebook.com">Facebook</a></li>
+            <i class="fa-brands fa-facebook"></i>
+    
             <li><a href="https://linkedin.com">Linkedin</a></li>
+            <i class="fa-brands fa-linkedin"></i>
+    
             <li><a href="https://pinterest.com">Pinterest</a></li>
+            <i class="fa-brands fa-pinterest"></i>
         </ul>
     </section>
-    </footer>   
-    </div> 
+    </footer>    
+    </div>
     </body>
     </html>

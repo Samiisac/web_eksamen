@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="icon/css/all.css">
+    <link rel="stylesheet" href="icon/css/brands.css">
+    <link rel="stylesheet" href="icon/css/solid.css">
     <title>Front-Page</title>
 </head>
 
 <body>
 <div class="grid-container">
 <header>
+    <form class="search-form" id="search-form">
+        <input type="text" placeholder="search her..">
+        <input type="submit" value="search">
+    </form>
     <nav class="main-nav" aria-label="Main Navigation">
         <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="#popular-products">products</a></li>
             <li><a href="index.html"> Logo </a></li>
             <li><a href="#popular-categories">categories</a></li>
-            <li><a href="checkout.html">cart</a></li>
             <li><a href="#contact-info">contact us</a></li>
+            <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#"> <i class="fa-regular fa-user"></i></a></li>
+            <li><a href="#"> <i class="fa-regular fa-heart"></i></a></li>
         </ul>
-        <form class="search-form" id="search-form">
-            <label for="search">search</label>
-            <input type="text" id="search" placeholder="search products..">
-            <input type="submit" value="search">
-        </form>
     </nav>
 </header>
     
@@ -35,8 +39,8 @@
     </section>
 
     <section id="popular-products" class="product-list">
-        <h3>our most popular products</h3>
-        <p>our best-selling products</p>
+        <h3>Our most popular products</h3>
+        <p>Best-selling products</p>
     </section>
     <section>
         <ul class="filter-buttons" aria-label="Product Filters">
@@ -48,34 +52,46 @@
 
     <section>
         <article class="product-card">
+            <a href="produkt.html">
             <img src="image/boutique-4342604_1280.jpg" alt="product 1" class="product-image">
             <h4 class="product-name">product-name</h4>
             <p class="product-price">Price</p>
+        </a>
         </article>
         <article class="product-card">
+            <a href="produkt.html">
             <img src="image/boutique-4342604_1280.jpg" alt="product 2">
             <h4>product-name</h4>
             <p>Price</p>
+        </a>
         </article>
         <article class="product-card">
+            <a href="produkt.html">
             <img src="image/boutique-4342604_1280.jpg" alt="product 3">
             <h4>product-name</h4>
             <p>Price</p>
+        </a>
         </article>
         <article class="product-card">
+            <a href="produkt.html">
             <img src="image/boutique-4342604_1280.jpg" alt="product 4">
             <h4>product-name</h4>
             <p>Price</p>
+        </a>
         </article>
         <article class="product-card">
+            <a href="produkt.html">
             <img src="image/boutique-4342604_1280.jpg" alt="product 5">
             <h4>product-name</h4>
             <p>Price</p>
+        </a>
         </article>
         <article class="product-card">
+            <a href="produkt.html">
             <img src="image/boutique-4342604_1280.jpg" alt="product 6">
             <h4>product-name</h4>
             <p>Price</p>
+        </a>
         </article>
     </section>
 
@@ -107,45 +123,47 @@
     <section id="reviews" class="reviews-section">
         <h3>Reviews</h3>
 
+        
         <article class="review-card">
             <figure>
-            <img src="#" alt="Reviews 1">
-            <figcaption>
-            <h4>Reviews 1</h4>
-            <p>xxx</p>
-        </figcaption>
-        </figure>
+            <img src="image/man-1253004_640.jpg" alt="Reviews 1">
+            <figcaption>Roberto Carlos</figcaption>
+            </figure>
+            <section class="reviews-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
         </article>
 
         <article class="review-card">
             <figure>
-            <img src="#" alt="Reviews 2">
-            <figcaption>
-            <h4>Reviews 2</h4>
-            <p>xxx</p>
-        </figcaption>
-        </figure>
+            <img src="image/man-1253004_640.jpg" alt="Reviews 2">
+            <figcaption>Roberto Carlos</figcaption>
+            </figure>
+            <section class="reviews-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
         </article>
 
         <article class="review-card">
             <figure>
-            <img src="#" alt="Reviews 3">
-            <figcaption>
-            <h4>Reviews 3</h4>
-            <p>xxx</p>
-        </figcaption>
-        </figure>
+            <img src="image/man-1253004_640.jpg" alt="Reviews 3">
+            <figcaption>Roberto Carlos</figcaption>
+            </figure>
+            <section class="reviews-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
         </article>
 
         <article class="review-card">
             <figure>
-            <img src="#" alt="Reviews 4">
-            <figcaption>
-            <h4>Reviews 4</h4>
-            <p>xxx</p>
-        </figcaption>
-        </figure>
+            <img src="image/man-1253004_640.jpg" alt="Reviews 4">
+            <figcaption>Roberto Carlos</figcaption>
+            </figure>
+            <section class="reviews-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
         </article>
+    </section>
 </main>
 
 <footer id="footer">
@@ -175,9 +193,16 @@
     <h4>SOSIAL MEDIA</h4>
     <ul>
         <li><a href="https://instagram.com">Instagram</a></li>
+        <i class="fa-brands fa-instagram"></i>
+
         <li><a href="https://facebook.com">Facebook</a></li>
+        <i class="fa-brands fa-facebook"></i>
+
         <li><a href="https://linkedin.com">Linkedin</a></li>
+        <i class="fa-brands fa-linkedin"></i>
+
         <li><a href="https://pinterest.com">Pinterest</a></li>
+        <i class="fa-brands fa-pinterest"></i>
     </ul>
 </section>
 </footer>    
