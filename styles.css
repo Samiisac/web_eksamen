@@ -560,3 +560,67 @@ footer .social-media-icons i {
 .payment-details p {
     margin: 10px 0;
 }
+
+
+@media (min-width: 768px) {
+    body {
+        max-width: 1200px; /* Begrens bredden og sentrer innholdet */
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .main-nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .search-form {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-banner {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding: 40px;
+        color: #fff;
+    }
+}
+   
+.reviews-section {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.review-card {
+    
+}
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    footer section:first-child {
+        grid-column: span 4;
+        text-align: center;
+    }
+
+
