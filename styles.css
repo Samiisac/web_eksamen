@@ -16,7 +16,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 10px;
     border-bottom: 1px solid #ddd; 
 }
@@ -66,7 +66,7 @@ header {
 .icon-nav li {
     font-size: 1.2em;
     color: #333;
-}
+} 
 
 .search-form {
     display: flex;
@@ -101,20 +101,23 @@ header {
 
 
 /* banner */
-.hero-banner {
-height: 400px;
-background-color: #333;
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: flex-start;
-text-align: left;
-padding: 20px;
-background-size: cover;
-background-position: center;
-color: #fff;
-}
-
+.hero-banner { 
+    background-image: url('image/fabrizio-coco-tScWZZNidg0-unsplash.jpg'); 
+    background-color: #333; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+    height: auto; 
+    min-height: 250px; 
+    padding: 30px; 
+ }
 .hero-banner h2 {
     margin: 0;
     font-size: 1.8em;
@@ -243,25 +246,41 @@ color: #fff;
 
 .category-card h3 {
 font-size: 1.2;
-color: #333;
+color: #000000;
 margin: 0;
+}
+.category-card:nth-child(1) {
+    background-image: url('image/christi-m-JSh3bIbVxeA-unsplash.jpg');
+}
+
+.category-card:nth-child(2) {
+    background-image: url('image/fabio-jock-eFHp9s4sdLg-unsplash.jpg');
+}
+
+.category-card:nth-child(3) {
+    background-image: url('image/josh-hild-_TuI8tZHlk4-unsplash.jpg');
+}
+
+.category-card:nth-child(4) {
+    background-image: url('image/meric-dagli-7NBO76G5JsE-unsplash.jpg');
+}
+
+.category-card:nth-child(5) {
+    background-image: url('image/sean-oulashin-KMn4VEeEPR8-unsplash.jpg');
 }
 
 .reviews-section {
-    padding: 20px;
-    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1200px;
     margin: auto;
 }
 
 .review-card {
     display: flex;
     align-items: flex-start;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
     gap: 15px;
 }
 
@@ -561,24 +580,23 @@ footer .social-media-icons i {
     margin: 10px 0;
 }
 
-
 @media (min-width: 768px) {
     body {
-        max-width: 1200px; /* Begrens bredden og sentrer innholdet */
+        max-width: 1200px;
         margin: 0 auto;
     }
-
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding: 10px 20px;
     }
-
     .main-nav ul {
         display: flex;
         gap: 20px;
         list-style: none;
+        justify-content: center;
+        flex: 1;
         margin: 0;
         padding: 0;
     }
@@ -587,40 +605,236 @@ footer .social-media-icons i {
         display: flex;
         align-items: center;
         gap: 10px;
+        flex: 1;
+        justify-content: flex-start;
     }
 
     .hero-banner {
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
-        padding: 40px;
+        position: relative;
+        background: url(image/fabrizio-coco-tScWZZNidg0-unsplash.jpg) center/cover no-repeat;
+        height: 400px;
         color: #fff;
-    }
-}
-   
-.reviews-section {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.review-card {
-    
-}
-
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 20px;
+        text-align: left;
         padding: 20px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .hero-banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    .hero-banner h2,
+    .hero-banner p,
+    .hero-banner a {
+        position: relative;
+        z-index: 2;
     }
 
-    footer section:first-child {
-        grid-column: span 4;
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 20px 0;
+        padding: 20px;
+
+    }
+
+    .product-card {
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .h3-categories {
         text-align: center;
     }
 
+    .h3-review {
+        text-align: center;
+    }
 
+    .category-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1 fr);
+        grid-template-rows: repeat(2, 200px);
+        gap: 15px;
+        margin: 20px;
+        padding: 10px;
+        grid-template-rows: initial;
+    }
+
+    .category-card {
+        background: rgba(0, 0, 0, 0.05);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+    }
+
+    .category-card.large {
+        grid-column: span 2;
+        grid-template-rows: span 2;
+    }
+
+    .category-card:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .category-card:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .category-card:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .category-card:nth-child(4) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .category-card:nth-child(5) {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    .category-card {
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        font-size: 1.5em;
+    }
+    
+    .category-card:nth-child(1) {
+        background-image: url('image/christi-m-JSh3bIbVxeA-unsplash.jpg');
+    }
+    
+    .category-card:nth-child(2) {
+        background-image: url('image/fabio-jock-eFHp9s4sdLg-unsplash.jpg');
+    }
+    
+    .category-card:nth-child(3) {
+        background-image: url('image/josh-hild-_TuI8tZHlk4-unsplash.jpg');
+    }
+    
+    .category-card:nth-child(4) {
+        background-image: url('image/meric-dagli-7NBO76G5JsE-unsplash.jpg');
+    }
+    
+    .category-card:nth-child(5) {
+        background-image: url('image/sean-oulashin-KMn4VEeEPR8-unsplash.jpg');
+    }
+    
+
+    .reviews-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 20px; 
+        padding: 20px;
+    }
+    
+    .review-card {
+        max-width: 300px; 
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+    
+    
+    .review-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 20px; 
+    }
+
+    .review-card img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    
+    .review-card h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    footer section:first-child {
+        grid-column: 1/4;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    footer #contact-info {
+        text-align: left;
+    }
+
+    footer section:nth-child(3) {
+        text-align: center;
+    }
+    footer section:nth-child(4) {
+        text-align: end;
+        align-items: end;
+    }
+
+    footer h4 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+
+}
