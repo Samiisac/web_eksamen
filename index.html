@@ -12,23 +12,30 @@
 
 <body>
 <div class="grid-container">
-<header>
-    <form class="search-form" id="search-form">
-        <input type="text" placeholder="search her..">
-        <input type="submit" value="search">
-    </form>
-    <nav class="main-nav" aria-label="Main Navigation">
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="#popular-products">products</a></li>
-            <li><a href="index.html"> Logo </a></li>
-            <li><a href="#popular-categories">categories</a></li>
-            <li><a href="#contact-info">contact us</a></li>
-            <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-        </ul>
-    </nav>
-</header>
+    <header role="banner">
+        <form class="search-form" action="#" method="get" role="search">
+            <input type="text" placeholder="search..." name="search" aria-label="search after products">
+            <button type="submit" aria-label="search"><i class="fa fa-search"></i></button>
+        </form>
+    
+        <nav class="main-nav" role="navigation" aria-label="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#popular-products">Products</a></li>
+                <li><a href="index.html">Logo</a></li>
+                <li><a href="#popular-categories">Categories</a></li>
+                <li><a href="#contact-info">Contact us</a></li>
+            </ul>
+        </nav>
+    
+        <div class="icon-nav" role="navigation" aria-label="user-meny">
+            <ul>
+                <li><a href="#" aria-label="user-profile"><i class="fa fa-user"></i></a></li>
+                <li><a href="#" aria-label="Favorites"><i class="fa fa-heart"></i></a></li>
+                <li><a href="checkout.html" aria-label="shopping-cart"><i class="fa fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </header>
     
 <main>
     <section id="banner" class="hero-banner">
@@ -52,71 +59,71 @@
     <section id="popular-products" class="product-grid">
         <article class="product-card">
             <a href="produkt.html">
-            <img src="image/boutique-4342604_1280.jpg" alt="product 1">
-            <h4 class="product-name">product-name</h4>
+            <img src="image/boutique-4342604_1280.jpg" alt="Boutique dress">
+            <h4 class="product-name">Product-name</h4>
             <p class="product-price">Price</p>
         </a>
         </article>
         <article class="product-card">
             <a href="produkt.html">
-            <img src="image/boutique-4342604_1280.jpg" alt="product 2">
-            <h4>product-name</h4>
+            <img src="image/boutique-4342604_1280.jpg" alt="Boutique dress">
+            <h4>Product-name</h4>
             <p>Price</p>
         </a>
         </article>
         <article class="product-card">
             <a href="produkt.html">
-            <img src="image/boutique-4342604_1280.jpg" alt="product 3">
-            <h4>product-name</h4>
+            <img src="image/boutique-4342604_1280.jpg" alt="Boutique dress">
+            <h4>Product-name</h4>
             <p>Price</p>
         </a>
         </article>
         <article class="product-card">
             <a href="produkt.html">
-            <img src="image/boutique-4342604_1280.jpg" alt="product 4">
-            <h4>product-name</h4>
+            <img src="image/boutique-4342604_1280.jpg" alt="Boutique dress">
+            <h4>Product-name</h4>
             <p>Price</p>
         </a>
         </article>
         <article class="product-card">
             <a href="produkt.html">
-            <img src="image/boutique-4342604_1280.jpg" alt="product 5">
-            <h4>product-name</h4>
+            <img src="image/boutique-4342604_1280.jpg" alt="Boutique dress">
+            <h4>Product-name</h4>
             <p>Price</p>
         </a>
         </article>
         <article class="product-card">
             <a href="produkt.html">
-            <img src="image/boutique-4342604_1280.jpg" alt="product 6">
-            <h4>product-name</h4>
+            <img src="image/boutique-4342604_1280.jpg" alt="Boutique dress">
+            <h4>Product-name</h4>
             <p>Price</p>
         </a>
         </article>
     </section>
 
     <section id=categories>
-        <h3 class="h3-categories">Our most popular categories</h3>
+    <h3 class="h3-categories">Our most popular categories</h3>
     </section>
         
     <section id="popular-categories" class="category-list">
         <article class="category-card">
-            <h3>category 1</h3>
+        <h3>Category 1</h3>
         </article>
 
         <article class="category-card">
-            <h3>category 2</h3>
+        <h3>Category 2</h3>
         </article>
 
         <article class="category-card">
-            <h3>category 3</h3>
+        <h3>Category 3</h3>
         </article>
 
         <article class="category-card special">
-            <h3>category 4</h3>
+        <h3>Category 4</h3>
         </article>
 
         <article class="category-card special">
-            <h3>category 5</h3>
+        <h3>Category 5</h3>
         </article>
     </section>
 
@@ -125,90 +132,87 @@
     <section id="reviews" class="reviews-section">     
      <article class="review-card">
             <figure>
-            <img src="image/man-1253004_640.jpg" alt="Reviews 1">
+            <img src="image/man-1253004_640.jpg" alt="Portrettbilde av Roberto Carlos">
             <figcaption>Roberto Carlos</figcaption>
             </figure>
             <section class="reviews-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </section>
         </article>
 
         <article class="review-card">
             <figure>
-            <img src="image/man-1253004_640.jpg" alt="Reviews 2">
+            <img src="image/man-1253004_640.jpg" alt="Portrettbilde av Roberto Carlos">
             <figcaption>Roberto Carlos</figcaption>
             </figure>
             <section class="reviews-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </section>
         </article>
 
         <article class="review-card">
             <figure>
-            <img src="image/man-1253004_640.jpg" alt="Reviews 3">
+            <img src="image/man-1253004_640.jpg" alt="Portrettbilde av Roberto Carlos">
             <figcaption>Roberto Carlos</figcaption>
             </figure>
             <section class="reviews-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </section>
         </article>
 
         <article class="review-card">
             <figure>
-            <img src="image/man-1253004_640.jpg" alt="Reviews 4">
+            <img src="image/man-1253004_640.jpg" alt="Portrettbilde av Roberto Carlos">
             <figcaption>Roberto Carlos</figcaption>
             </figure>
             <section class="reviews-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </section>
         </article>
     </section>
 </main>
 
 <footer id="footer">
-<section>
+    <section>
     <h3>Logo</h3>
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-</section>
-
-<section id="contact-info">
-<h4>Kontact Info</h4>
-<p>Adress:B R A Veien 4, 1757 Halden</p>
-<p>Phone:69 60 80 00</p>
-<p>Mail:postmottak@nettbutikk.no</p>
-<p>opening hours:Closing 16.00</p>
-</section>
-
-<section>
-    <h4>SHORTCUTS</h4>
-    <ul>
-        <li><a href="#popular-products">products</a></li>
-        <li><a href="#popular-categories">categories</a></li>
-        <li><a href="#contact-info">contacts us</a></li>
-    </ul>
-</section>
-
-<section>
-    <h4>SOSIAL MEDIA</h4>
-    <ul>
-        <li>
-            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-        </li>
-
-        <li>
-            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-        </li>
-
-        <li>
-            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-        </li>
-
-        <li>
-            <a href="https://pinterest.com"> <i class="fa-brands fa-pinterest"></i></a>
-        </li>
-    </ul>
-</section>
-</footer>    
-</div>
-</body>
-</html>
+    </section>
+    
+    <section id="contact-info">
+    <h4>Contact Info</h4>
+    <p>Adress:B R A Veien 4, 1757 Halden</p>
+    <p>Phone:69 60 80 00</p>
+    <p>Mail:postmottak@nettbutikk.no</p>
+    <p>opening hours:08.00-16.00</p>
+    </section>
+    
+    <section>
+        <h4>SHORTCUTS</h4>
+        <ul>
+            <li><a href="#popular-products">products</a></li>
+            <li><a href="#popular-categories">categories</a></li>
+            <li><a href="#contact-info">contacts us</a></li>
+        </ul>
+    </section>
+    
+    <section>
+        <h4>SOSIAL MEDIA</h4>
+        <ul>
+            <li>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="https://pinterest.com"> <i class="fa-brands fa-pinterest"></i></a>
+            </li>
+        </ul>
+    </section>
+    </footer>    
+    </div>
+    </body>
+    </html>

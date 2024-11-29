@@ -7,157 +7,180 @@
     <link rel="stylesheet" href="icon/css/all.css">
     <link rel="stylesheet" href="icon/css/brands.css">
     <link rel="stylesheet" href="icon/css/solid.css">
-    <title>Front-Page</title>
+    <title>Products</title>
 </head>
 
 <body>
 <div class="grid-container">
-<header>
-    <form class="search-form" id="search-form">
-        <input type="text" placeholder="search her..">
-        <input type="submit" value="search">
-    </form>
-    <nav class="main-nav" aria-label="Main Navigation">
+    <header role="banner">
+        <form class="search-form" action="#" method="get" role="search">
+            <input type="text" placeholder="search..." name="search" aria-label="search after products">
+            <button type="submit" aria-label="search"><i class="fa fa-search"></i></button>
+        </form>
+    
+        <nav class="main-nav" role="navigation" aria-label="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#popular-products">Products</a></li>
+                <li><a href="index.html">Logo</a></li>
+                <li><a href="#popular-categories">Categories</a></li>
+                <li><a href="#contact-info">Contact us</a></li>
+            </ul>
+        </nav>
+    
+        <div class="icon-nav" role="navigation" aria-label="user-meny">
+            <ul>
+                <li><a href="#" aria-label="user-profile"><i class="fa fa-user"></i></a></li>
+                <li><a href="#" aria-label="Favorites"><i class="fa fa-heart"></i></a></li>
+                <li><a href="checkout.html" aria-label="shopping-cart"><i class="fa fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <nav class="breadcrumb-nav" aria-label="breadcrumb">
         <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="#popular-products">products</a></li>
-            <li><a href="index.html"> Logo </a></li>
-            <li><a href="#popular-categories">categories</a></li>
-            <li><a href="#contact-info">contact us</a></li>
-            <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            <li><a href="#"> <i class="fa-regular fa-user"></i></a></li>
-            <li><a href="#"> <i class="fa-regular fa-heart"></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Category</a></li>
+            <li aria-current="page">Product-name</li>
         </ul>
     </nav>
-</header>
-        
     
-<nav class="breadcrumb-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="category.html">category</a></li>
-        <li aria-current="page">Productname</li>
-    </ul>
-</nav>
 
-<main>
-    <section class="product-images">
-        <h2>product images</h2>
-
-        <figure>
-            <img src="image/boutique-4342604_1280.jpg" alt="Main image of the product">
-        </figure>
-
-        <aside class="minipic">
-            <img src="image/boutique-4342604_1280.jpg" alt="mini picture 1">
-            <img src="image/boutique-4342604_1280.jpg" alt="mini picture 2">
-            <img src="image/boutique-4342604_1280.jpg" alt="mini picture 3">
-        </aside>
-    </section>
-
-    <section class="product-info">
-       
-        <h2>product name</h2>
-        <p>kr 1900</p>
-        <p>Color: orange</p>
-
-        <form action="checkout.html" method="post">
-            <label for="size">Choose size</label>
-        <select name="size" id="size">
-            <option value="S">Small</option>
-            <option value="M">Medium</option>
-            <option value="L">Large</option>
-        </select>
-        <button type="button" class="button add-to-cart">Add to cart</button>
-        <button type="submit" class="button submit-btn">Complete purchase</button>
-        </form>
-    </section>
-
-    <section class="related-products">
-        <h2>related products</h2>
-
-        <article class="related-product-card">
-        <figure>
-            <img src="image/1.jpg" alt="Related product 1">
-        <figcaption>
-            <h3>product name</h3>
-            <p>Price: kr 999</p>
-        </figcaption>
-        </figure>
-        </article>
-
-        <article class="related-product-card">
-            <figure>
-                <img src="image/2.jpg" alt="Related product 2">
-            <figcaption>
-                <h3>product name</h3>
-                <p>Price: kr 999</p>
-            </figcaption>
-            </figure>
-            </article>
-
-            <article class="related-product-card">
-                <figure>
-                    <img src="image/3.jpg" alt="Related product 3">
-                <figcaption>
-                    <h3>product name</h3>
-                    <p>Price: kr 999</p>
-                </figcaption>
-                </figure>
-                </article>
-
+    <main class="product-main">
+        <section class="product-images">
+            <div class="minipic">
+                <img src="image/boutique-4342604_1280.jpg" alt="Thumbnail 1">
+                <img src="image/boutique-4342604_1280.jpg" alt="Thumbnail 2">
+                <img src="image/boutique-4342604_1280.jpg" alt="Thumbnail 3">
+            </div>
+            <div class="main-image">
+                <img src="image/boutique-4342604_1280.jpg" alt="Main-product-image">
+            </div>
+        </section>
+        
+        <section class="product-info">
+            <h2>Product Name</h2>
+            <p>Price: 5,195 kr incl. VAT</p>
+            <p>Color: Beige</p>
+            <form>
+                <label for="size">Choose size</label>
+                <select id="size" name="size">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+                <button type="button">Add to Cart</button>
+            </form>
+        
+            <details>
+                <summary>Material and Maintenance</summary>
+                <ul>
+                    <li>95% Viscose, 5% Elastane</li>
+                    <li>100% Polyester</li>
+                    <li>Jersey Material</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Product Details</summary>
+                <p>
+                    Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, and award-winning fireworks.
+                </p>
+            </details>
+            <details>
+                <summary>Size Chart</summary>
+                <p>Find the perfect fit with our size guide.</p>
+            </details>
+            <details>
+                <summary>Reviews</summary>
+                <p>4.5/5 based on 2320 reviews.</p>
+            </details>
+        </section>
+        
+    </main>
+        <section class="related-products">
+            <h2>Related Products</h2>
+            <div class="related-products-container">
                 <article class="related-product-card">
-                    <figure>
-                        <img src="image/4.jpg" alt="Related product 4">
-                    <figcaption>
-                        <h3>product name</h3>
-                        <p>Price: kr 999</p>
-                    </figcaption>
-                    </figure>
-                    </article>
-    </section>
-</main>
-
-<footer id="footer">
-    <section>
+                    <img src="image/1.jpg" alt="related-product">
+                    <h3>Product Name</h3>
+                    <p>Price: kr 999</p>
+                    <p>842 Reviews ★★★★☆</p>
+                </article>
+                <article class="related-product-card">
+                    <img src="image/4.jpg" alt="related-product">
+                    <h3>Product Name</h3>
+                    <p>Price: kr 999</p>
+                    <p>542 Reviews ★★★★★</p>
+                </article>
+                <article class="related-product-card">
+                    <img src="image/2.jpg" alt="related-product">
+                    <h3>Product Name</h3>
+                    <p>Price: kr 999</p>
+                    <p>842 Reviews ★★★★☆</p>
+                </article>
+                <article class="related-product-card">
+                    <img src="image/4.jpg" alt="related-product">
+                    <h3>Product Name</h3>
+                    <p>Price: kr 999</p>
+                    <p>642 Reviews ★★★★★</p>
+                </article>
+                <article class="related-product-card">
+                    <img src="image/3.jpg" alt="related-product">
+                    <h3>Product Name</h3>
+                    <p>Price: kr 999</p>
+                    <p>742 Reviews ★★★★☆</p>
+                </article>
+                <article class="related-product-card">
+                    <img src="image/4.jpg" alt="related-product">
+                    <h3>Product Name</h3>
+                    <p>Price: kr 999</p>
+                    <p>942 Reviews ★★★★★</p>
+                </article>
+            </div>
+        </section>      
+    </main>
+    
+    <footer id="footer">
+        <section>
         <h3>Logo</h3>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-    </section>
-    
-    <section id="contact-info">
-    <h4>Kontact Info</h4>
-    <p>Adress:B R A Veien 4, 1757 Halden</p>
-    <p>Phone:69 60 80 00</p>
-    <p>Mail:postmottak@nettbutikk.no</p>
-    <p>opening hours:Closing 16.00</p>
-    </section>
-    
-    <section>
-        <h4>SHORTCUTS</h4>
-        <ul>
-            <li><a href="#popular-products">products</a></li>
-            <li><a href="#popular-categories">categories</a></li>
-            <li><a href="#contact-info">contacts us</a></li>
-        </ul>
-    </section>
-    
-    <section>
-        <h4>SOSIAL MEDIA</h4>
-        <ul>
-            <li><a href="https://instagram.com">Instagram</a></li>
-            <i class="fa-brands fa-instagram"></i>
-    
-            <li><a href="https://facebook.com">Facebook</a></li>
-            <i class="fa-brands fa-facebook"></i>
-    
-            <li><a href="https://linkedin.com">Linkedin</a></li>
-            <i class="fa-brands fa-linkedin"></i>
-    
-            <li><a href="https://pinterest.com">Pinterest</a></li>
-            <i class="fa-brands fa-pinterest"></i>
-        </ul>
-    </section>
-    </footer>    
-    </div>
-    </body>
-    </html>
+        </section>
+        
+        <section id="contact-info">
+        <h4>Contact Info</h4>
+        <p>Adress:B R A Veien 4, 1757 Halden</p>
+        <p>Phone:69 60 80 00</p>
+        <p>Mail:postmottak@nettbutikk.no</p>
+        <p>opening hours:08.00-16.00</p>
+        </section>
+        
+        <section>
+            <h4>SHORTCUTS</h4>
+            <ul>
+                <li><a href="#popular-products">products</a></li>
+                <li><a href="#popular-categories">categories</a></li>
+                <li><a href="#contact-info">contacts us</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <h4>SOSIAL MEDIA</h4>
+            <ul>
+                <li>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://pinterest.com"> <i class="fa-brands fa-pinterest"></i></a>
+                </li>
+            </ul>
+        </section>
+        </footer>    
+        </div>
+        </body>
+        </html>
